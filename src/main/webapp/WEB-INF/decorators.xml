@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Sitemesh removed -->
+<decorators defaultdir="/WEB-INF/views/decorators">
+    <excludes>
+        <pattern>/assets/*</pattern>
+        <pattern>/static/*</pattern>
+        <pattern>/login</pattern>
+        <pattern>/register</pattern>
+        <pattern>/WEB-INF/views/decorators/*</pattern>
+    </excludes>
+
+    <decorator name="admin" page="/WEB-INF/views/decorators/admin.jsp">
+        <pattern>/admin/*</pattern>
+    </decorator>
+
+    <decorator name="user" page="/WEB-INF/views/decorators/user.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+</decorators>
 
 
